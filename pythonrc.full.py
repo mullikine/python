@@ -235,8 +235,11 @@ if (sys.version_info > (3, 0)):
     #  /var/smulliga/notes/ws/tensorflow/setup/libcudnn.so.5.txt
     import tensorflow
     import tensorflow as tf
+    import tensorflow_probability as tfp
 
-    import tensorflow_datasets as tfds
+    # This is frustratingly broken
+    # import tensorflow_datasets as tfds
+    # this happen because you are using python 3 rather than python 3.7. Just install pip37/python37 to overcome such issue.
 
     tf.logging.set_verbosity(tf.logging.INFO)
 
@@ -500,17 +503,23 @@ import pbr
 
 #  Add useful things to the basic python interpreter
 import readline
-import rlcompleter
-import atexit
-history_file = os.path.join(os.environ['HOME'], '.python_history')
+
 try:
-    readline.read_history_file(history_file)
-except IOError:
+    import rlcompleter
+except:
     pass
-readline.parse_and_bind("tab: complete")
-readline.set_history_length(1000)
-atexit.register(readline.write_history_file, history_file)
-del readline, rlcompleter, atexit, history_file
+
+import atexit
+
+# history_file = os.path.join(os.environ['HOME'], '.python_history')
+# try:
+#     readline.read_history_file(history_file)
+# except IOError:
+#     pass
+# readline.parse_and_bind("tab: complete")
+# readline.set_history_length(1000)
+# atexit.register(readline.write_history_file, history_file)
+# del readline, rlcompleter, atexit, history_file
 
 
 sys.path.append("/var/smulliga/notes2017/ws/python/")
