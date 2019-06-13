@@ -235,7 +235,15 @@ if (sys.version_info > (3, 0)):
     #  /var/smulliga/notes/ws/tensorflow/setup/libcudnn.so.5.txt
     import tensorflow
     import tensorflow as tf
+
+    ## Outdated? I think I only needed to reinstall tensorflow
+    from tensorflow.python.framework import dtypes
+    from tensorflow.contrib import learn as tflearn
+    from tensorflow.contrib import layers as tflayers
+
     import tensorflow_probability as tfp
+    import tensorflow_text as tft
+    import tensorflow_text as text # The standard import
 
     # This is frustratingly broken
     # import tensorflow_datasets as tfds
@@ -245,10 +253,6 @@ if (sys.version_info > (3, 0)):
 
     # This died
     #  import tensorflow_hub as hub
-
-    from tensorflow.python.framework import dtypes
-    from tensorflow.contrib import learn as tflearn
-    from tensorflow.contrib import layers as tflayers
 
     import keras
     import keras as ks
