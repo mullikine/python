@@ -11,6 +11,8 @@ import numpy as np
 import math
 import math as m
 
+import random
+
 # pandas takes more time to start than numpy. do i need it? nah
 #import pandas
 #import pandas as pd

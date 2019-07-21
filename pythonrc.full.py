@@ -3,6 +3,8 @@
 
 import sys
 
+import random
+
 import pip
 
 def import_or_install(package):
@@ -74,12 +76,14 @@ import gym
 import_or_install("github")
 
 import github as gh
-from github import Github
+#  from github import Github
+
 
 import fastai as fai
 
 import unicodedata
 import shanepy
+import shanepy as spy
 from shanepy import *
 
 import sklearn as sk
@@ -94,8 +98,8 @@ if (sys.version_info > (3, 0)):
 
 #  import pydeep
 
-import libtmux
-ts = libtmux.Server()
+# import libtmux
+# ts = libtmux.Server()
 
 # I have to start building more python libraries
 # Build classes and things. Work towards tensorflow and spacy. Build things
@@ -170,6 +174,9 @@ if (sys.version_info > (3, 0)):
 # for module in modules:
 #     sys.modules.pop(module)
 
+# Matplotlib may not work for python3.6 because tkinter is not a pip package and
+# must be installed via apt. sudo apt install python3-tk
+# But it's not available for python3.5
 import matplotlib
 import matplotlib as mp
 import matplotlib as mpl
@@ -237,19 +244,20 @@ if (sys.version_info > (3, 0)):
     import tensorflow as tf
 
     ## Outdated? I think I only needed to reinstall tensorflow
-    from tensorflow.python.framework import dtypes
-    from tensorflow.contrib import learn as tflearn
-    from tensorflow.contrib import layers as tflayers
+    # from tensorflow.python.framework import dtypes
+    # from tensorflow.contrib import learn as tflearn
+    # from tensorflow.contrib import layers as tflayers
+    # tf.logging.set_verbosity(tf.logging.INFO)
 
-    import tensorflow_probability as tfp
+    # This isn't working.
+    # import tensorflow_probability as tfp
+
     import tensorflow_text as tft
     import tensorflow_text as text # The standard import
 
     # This is frustratingly broken
     # import tensorflow_datasets as tfds
     # this happen because you are using python 3 rather than python 3.7. Just install pip37/python37 to overcome such issue.
-
-    tf.logging.set_verbosity(tf.logging.INFO)
 
     # This died
     #  import tensorflow_hub as hub
@@ -598,7 +606,8 @@ import networkx as nx
 import dataset as ds
 
 #  http://hypertools.readthedocs.io/en/latest/auto_examples/precog.html#sphx-glr-auto-examples-precog-py
-import hypertools as hyp
+#  hypertools is no longer working with dependencies
+#  import hypertools as hyp
 
 #  hyp.plot(list_of_arrays, '.', group=list_of_labels)
 #  hyp.plot(list_of_arrays, align='hyper')
@@ -643,6 +652,13 @@ def list_add(mylist, x):
 
 from googlesearch import search
 
-from github import Github
-
 from tabulate import tabulate
+
+import django
+
+import snips_nlu
+
+# This appears to break python3.5
+import pytrends
+
+import psychopy

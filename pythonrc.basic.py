@@ -1,6 +1,8 @@
 import sys
 import os
 
+import random
+
 if (sys.version_info > (3, 0)):
     from past.builtins import execfile
 
