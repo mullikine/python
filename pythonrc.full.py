@@ -665,3 +665,5 @@ import psychopy
 
 import tensorflow_ranking
 import tensorflow_ranking as tfr
+
+import doepy
