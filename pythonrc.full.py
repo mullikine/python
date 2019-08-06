@@ -210,13 +210,15 @@ from problog.logic import Term, Constant
 
 import Cython
 import Cython as cy
-import fasttext
-import fasttext as ft
 
 
-
-# Python streaming
-import riko
+## Not so important now that I have spaCy
+## Can't seem to compile for python3.6
+# import fasttext
+# import fasttext as ft
+## Can't seem to compile for python3.6
+## Python streaming
+# import riko
 
 
 import apscheduler
@@ -584,11 +586,10 @@ def map_funcs(obj, func_list):
 
 # Memory-efficient Count-Min Sketch Counter (based on Madoka C++ library)
 #  https://github.com/ikegami-yukino/madoka-python
-
 # Try out madoka then
-
-import madoka
-sketch = madoka.Sketch()
+# It doesn't compile work on python3.6
+# import madoka
+# sketch = madoka.Sketch()
 
 # I want python version detection though. But I should just start building
 # things with python. I should not do this with c++. I should slap together
@@ -650,7 +651,6 @@ def list_add(mylist, x):
 
     mylist.extend( x if type(x) == list else [x] )
 
-from googlesearch import search
 
 from tabulate import tabulate
 

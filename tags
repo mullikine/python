@@ -21,6 +21,5 @@ multiply	pythonrc.debug.py	/^def multiply(x, y):$/;"	f
 normpath	pythonrc.full.py	/^def normpath(p):$/;"	f
 print_callable	pythonrc.debug.py	/^def print_callable(f):$/;"	f
 s2	pythonrc.full.py	/^s2=df2.var()$/;"	v
-sketch	pythonrc.full.py	/^sketch = madoka.Sketch()$/;"	v
 source_file	pythonrc.full.py	/^def source_file(fp):$/;"	f
 tracer	pythonrc.full.py	/^tracer = trace.Trace($/;"	v
