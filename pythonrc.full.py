@@ -7,11 +7,11 @@ import random
 
 import pip
 
-def import_or_install(package):
-    try:
-        __import__(package)
-    except ImportError:
-        pip.main(['install', package])
+#def import_or_install(package):
+#    try:
+#        __import__(package)
+#    except ImportError:
+#        pip.main(['install', package])
 
 try:
     import torch
@@ -21,12 +21,12 @@ except:
 
 #  py i dopamine-rl
 
-# appears stable enough for xpti
-try:
-    import_or_install("dopamine")
-    #  import dopamine
-except:
-    pass
+## appears stable enough for xpti
+#try:
+#    import_or_install("dopamine")
+#    #  import dopamine
+#except:
+#    pass
 
 import mock
 
@@ -73,9 +73,11 @@ except:
 # OpenAI gym
 import gym
 
-import_or_install("github")
+# This didn't work for python3.7
+# import_or_install("github")
 
-import github as gh
+# This didn't work for python3.7
+#  import github as gh
 #  from github import Github
 
 
@@ -254,8 +256,9 @@ if (sys.version_info > (3, 0)):
     # This isn't working.
     # import tensorflow_probability as tfp
 
-    import tensorflow_text as tft
-    import tensorflow_text as text # The standard import
+    # This is broken, too, for python3.7 at least
+    # import tensorflow_text as tft
+    # import tensorflow_text as text # The standard import
 
     # This is frustratingly broken
     # import tensorflow_datasets as tfds
@@ -268,12 +271,13 @@ if (sys.version_info > (3, 0)):
     import keras as ks
     from keras import backend as K
 
-    import pyspark
-    import pyspark as ps
-    import smartframes
-    import smartframes as sf
-    import tensorflowonspark
-    import tensorflowonspark as tfs
+    ## fuck spark
+    # import pyspark
+    # import pyspark as ps
+    # import smartframes
+    # import smartframes as sf
+    # import tensorflowonspark
+    # import tensorflowonspark as tfs
 
     import kibana
     import kibana as ki
@@ -667,3 +671,5 @@ import tensorflow_ranking
 import tensorflow_ranking as tfr
 
 import doepy
+
+# import rasa.nlu
