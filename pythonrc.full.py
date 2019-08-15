@@ -565,9 +565,9 @@ tracer = trace.Trace(
 #r.write_results(show_missing=True, coverdir=".")
 
 
-df1=o("/home/shane/var/smulliga/source/git/tensorflow/tensorflow/contrib/learn/python/learn/datasets/data/boston_house_prices.csv")
+df1=o("$MYGIT/tensorflow/tensorflow/contrib/learn/python/learn/datasets/data/boston_house_prices.csv")
 #  df2=o("/var/smulliga/notes/issues/IMM-1145/rm48_DataConfig_Utility-cdid-mie.csv").rename(columns={'Cdid':'CDID'})
-df2=o("/home/shane/var/smulliga/source/git/visidata/sample_data/StatusPR.csv").rename(columns={'Cdid':'CDID', 'MenuItemElement':'ElementName'})
+df2=o("$MYGIT/visidata/sample_data/StatusPR.csv").rename(columns={'Cdid':'CDID', 'MenuItemElement':'ElementName'})
 df=df1
 # This is so I start with a dataframe to play around with.
 s2=df2.var()
@@ -669,6 +669,10 @@ import psychopy
 
 import tensorflow_ranking
 import tensorflow_ranking as tfr
+
+# Appears to be broken for python3.7
+# import tensorflow_text
+# import tensorflow_text as tft
 
 import doepy
 

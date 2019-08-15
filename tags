@@ -9,8 +9,8 @@ FindRow	pythonrc.full.py	/^def FindRow(value, column):$/;"	f
 GetPythonVersion	pythonrc.full.py	/^def GetPythonVersion():$/;"	f
 decorated	pythonrc.debug.py	/^    def decorated(*args, **kwargs):$/;"	f	function:print_callable
 df	pythonrc.full.py	/^df=df1$/;"	v
-df1	pythonrc.full.py	/^df1=o("\/home\/shane\/var\/smulliga\/source\/git\/tensorflow\/tensorflow\/contrib\/learn\/python\/learn\/datasets\/data\/boston_house_prices.csv")$/;"	v
-df2	pythonrc.full.py	/^df2=o("\/home\/shane\/var\/smulliga\/source\/git\/visidata\/sample_data\/StatusPR.csv").rename(columns={'Cdid':'CDID', 'MenuItemElement':'ElementName'})$/;"	v
+df1	pythonrc.full.py	/^df1=o("$MYGIT\/tensorflow\/tensorflow\/contrib\/learn\/python\/learn\/datasets\/data\/boston_house_prices.csv")$/;"	v
+df2	pythonrc.full.py	/^df2=o("$MYGIT\/visidata\/sample_data\/StatusPR.csv").rename(columns={'Cdid':'CDID', 'MenuItemElement':'ElementName'})$/;"	v
 foo	pythonrc.debug.py	/^    def foo(self):$/;"	m	class:A
 include	pythonrc.basic.py	/^def include(filename):$/;"	f
 list_add	pythonrc.full.py	/^def list_add(mylist, x):$/;"	f
