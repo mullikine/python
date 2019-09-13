@@ -679,3 +679,7 @@ import doepy
 # import rasa.nlu
 
 import textblob
+
+import srsly
+import gensim
+import pyLDAvis
