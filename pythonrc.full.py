@@ -683,3 +683,5 @@ import textblob
 import srsly
 import gensim
 import pyLDAvis
+
+import binaryornot
