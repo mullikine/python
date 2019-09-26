@@ -676,7 +676,10 @@ import tensorflow_ranking as tfr
 
 import doepy
 
-# import rasa.nlu
+if (sys.version_info < (3, 7)):
+    import rasa_nlu
+else:
+    import rasa.nlu
 
 import textblob
 
