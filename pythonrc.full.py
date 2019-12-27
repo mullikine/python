@@ -691,3 +691,4 @@ import pyLDAvis
 
 import binaryornot
 
+import conllu
