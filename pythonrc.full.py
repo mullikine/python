@@ -1,6 +1,8 @@
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
+# This will prevent deprecation warnings from messing up the xpti repl
+
 # This should not be the default pythonrc file. It's too slow and slows down
 # emacs.
 
