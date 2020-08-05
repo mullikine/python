@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 # This should not be the default pythonrc file. It's too slow and slows down
 # emacs.
 
@@ -692,3 +695,5 @@ import pyLDAvis
 import binaryornot
 
 import conllu
+
+import openapi
