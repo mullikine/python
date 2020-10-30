@@ -1,8 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-# This will prevent deprecation warnings from messing up the xpti repl
-
 # This should not be the default pythonrc file. It's too slow and slows down
 # emacs.
 
@@ -674,8 +672,12 @@ import pytrends
 
 import psychopy
 
-import tensorflow_ranking
-import tensorflow_ranking as tfr
+# It works for python 3.7 currently
+if (sys.version_info > (3, 6)):
+    import tensorflow_ranking
+    import tensorflow_ranking as tfr
+
+import pytextrank
 
 # Appears to be broken for python3.7
 # import tensorflow_text

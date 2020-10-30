@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 # shanepy imports pandas. that's a bit OP
 import shanepy
 from shanepy import *
