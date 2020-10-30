@@ -677,7 +677,7 @@ if (sys.version_info > (3, 6)):
     import tensorflow_ranking
     import tensorflow_ranking as tfr
 
-import pytextrank
+import pytextrank as ptr
 
 # Appears to be broken for python3.7
 # import tensorflow_text
