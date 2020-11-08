@@ -673,9 +673,9 @@ import pytrends
 import psychopy
 
 # It works for python 3.7 currently
-if (sys.version_info > (3, 6)):
-    import tensorflow_ranking
-    import tensorflow_ranking as tfr
+# if (sys.version_info > (3, 6)):
+#     import tensorflow_ranking
+#     import tensorflow_ranking as tfr
 
 import pytextrank as ptr
 
