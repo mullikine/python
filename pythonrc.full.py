@@ -91,9 +91,9 @@ import shanepy
 import shanepy as spy
 from shanepy import *
 
-import sklearn as sk
-from sklearn.preprocessing import scale
-#  vim +/"data = scale(data)" "$HOME$MYGIT/FlorianMuellerklein/Machine-Learning/MultiLayerPerceptron.py"
+# import sklearn as sk
+# from sklearn.preprocessing import scale
+# #  vim +/"data = scale(data)" "$HOME$MYGIT/FlorianMuellerklein/Machine-Learning/MultiLayerPerceptron.py"
 
 #  agi libfuzzy-dev
 if (sys.version_info > (3, 0)):
@@ -325,10 +325,10 @@ import sqlalchemy
 import sqlalchemy as sa
 import spacy
 import spacy as sy
-from nltk.stem.wordnet import WordNetLemmatizer
-#  from spacy.en import English
-import nltk
-import nltk as nl
+# from nltk.stem.wordnet import WordNetLemmatizer
+# #  from spacy.en import English
+# import nltk
+# import nltk as nl
 import argparse
 import argparse as ap
 import bisect
@@ -685,10 +685,10 @@ import pytextrank as ptr
 
 import doepy
 
-if (sys.version_info < (3, 7)):
-    import rasa_nlu
-else:
-    import rasa.nlu
+# if (sys.version_info < (3, 7)):
+#     import rasa_nlu
+# else:
+#     import rasa.nlu
 
 import textblob
 
